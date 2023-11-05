@@ -1,0 +1,42 @@
+// Media queries
+
+/*
+0 - 600px phone
+600 - 900 tablet portrair
+900 - 1200 tablet landscape
+1200 - 1800; normal styles applying
+1800+; big desktop
+
+768 - dan burger menu
+320 min
+1630 px
+*/
+
+// 1em = 16 px
+
+
+@mixin respond($breakpoint){
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) { @content }; //600px
+  }
+  @if $breakpoint == phone-l {
+    @media (max-width: 48em) { @content }; //768px
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) { @content }; //900px
+  }
+  @if $breakpoint == tab-port-1090 {
+    @media (max-width: 68.125em) { @content }; // 1090px;
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) { @content }; //1200px
+  }
+  @if $breakpoint == tab-land-1324 {
+    @media (max-width: 82.75em) { @content }; // 1324px;
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) { @content }; //1800px
+  }
+}
+
+

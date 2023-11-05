@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/js/modalWindow.js"></script>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/js/index.js"></script>
+    <title>World News</title>
+  </head>
+  <body class="position">
+    <!-- mobile nav -->
+    <div class="navigation hidden">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">HOME</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Discovery</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">contact</a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+    <!-- header -->
+    <header class="header__container">
+      <div class="header">
+        <!-- logo -->
+        <p class="header__logo">
+          <a href="#" class="header__logo-link">logo</a>
+        </p>
+        <!-- navigation -->
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./story.html" class="header__menu-link">discovery</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">photos</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- popup icon -->
+        <div class="header__modal">
+          <img
+            src="./public/photo-1438761681033-6461ffad8d80.avif"
+            class="header__img"
+            alt="user"
+          />
+          <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <div class="modal__content">
+              <img
+                src="./public/dawid-tkocz-aVuYOmuafdE-unsplash (1).jpg"
+                class="modal__img"
+                alt="greece"
+              />
+              <div class="popup">
+                <p class="popup__title">Join the newsletter</p>
+                <p class="popup__txt">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
+                  tenetur ipsam possimus iusto commodi facere provident
+                  excepturi ab quae at!
+                </p>
+                <button class="popup__btn">Know More!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay hidden"></div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+.header__container {
+  background-color: $gray;
+}
+
+.header {
+  height: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 4rem;
+  @media (max-width: 30em) {
+    justify-content: flex-end;
+    gap: 6rem;
+  }
+  &__logo {
+      font-size: 2rem;
+      &-link{
+          font-weight: 600;
+          color: $pink;
+          text-transform: uppercase;
+          text-decoration: none;
+          cursor: default;
+    }
+  }
+  &__nav {
+    flex: 1;
+    @media (max-width: 30em) {
+      display: none;
+    }
+}
+&__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    &-item {
+      list-style-type: none;
+      font-size: 1.6rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 2rem;
+    }
+    &-link{
+        text-decoration: none;
+        color: $coolGray;
+        transition: color 0.3s;
+    }
+    &-link:link, &-link:visited{
+        color: $coolGray;
+  
+    }
+    &-link:hover, &-link:active{
+        color: $black;
+    }
+  }
+  &__modal {
+    justify-self: end;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  &__img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    // @media (max-width: 24em) {
+    //   // align-self: flex-end;
+    //   justify-self: flex-end;
+    // }
+  }
+}
+
