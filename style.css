@@ -56,6 +56,27 @@ body {
   border: 0.5px solid #fff;
   width: 100%; }
 
+.hero__slider {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  flex-wrap: nowrap;
+  height: 100vh; }
+  .hero__slider--slide {
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    transition: transform 0.5s ease-in-out; }
+
 .header__container {
   background-color: #f6f8f9; }
 
@@ -275,3 +296,163 @@ body {
     padding: 1.5rem 0.5rem;
     cursor: pointer;
     border: 1px solid #fa6980; }
+
+.hero {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  flex-wrap: wrap; }
+  .hero .img__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 100%; }
+    .hero .img__container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    @media (max-width: 48em) {
+      .hero .img__container {
+        width: 100vw; } }
+  .hero .content-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    align-items: center; }
+    @media (max-width: 48em) {
+      .hero .content-wrapper {
+        display: flex;
+        flex-direction: column; } }
+    .hero .content-wrapper .hero__content {
+      padding-left: 5rem; }
+      @media (max-width: 48em) {
+        .hero .content-wrapper .hero__content {
+          width: 100vw;
+          margin-top: 35rem; } }
+      .hero .content-wrapper .hero__content .main-title {
+        max-width: 600px;
+        width: 100%; }
+        .hero .content-wrapper .hero__content .main-title .main-t {
+          font-family: "Helvetica";
+          font-weight: bold;
+          color: #fff;
+          font-size: 24px;
+          border-bottom: 1px solid #fff;
+          padding-bottom: 40px; }
+        .hero .content-wrapper .hero__content .main-title .text-container {
+          width: 100%;
+          margin-top: 40px; }
+          .hero .content-wrapper .hero__content .main-title .text-container .second-titile {
+            font-family: "Helvetica-Bold";
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff; }
+          .hero .content-wrapper .hero__content .main-title .text-container .hero-txt {
+            max-width: 560px;
+            width: 100%;
+            font-family: "Helvetica";
+            font-size: 16px;
+            color: #fff;
+            line-height: 20px;
+            margin-top: 20px; }
+          .hero .content-wrapper .hero__content .main-title .text-container .hero-btn {
+            max-width: 134px;
+            width: 100%;
+            height: 40px;
+            background: #fa6980;
+            color: #fff;
+            font-family: "Helvetica-Bold";
+            font-size: 11px;
+            margin-top: 30px;
+            border: none;
+            border-radius: 6px;
+            transition: all 0.3s;
+            cursor: pointer; }
+            .hero .content-wrapper .hero__content .main-title .text-container .hero-btn:hover {
+              transition: all 0.3s;
+              background: #fff;
+              color: #fa6980;
+              border: none; }
+    .hero .content-wrapper .hero__slides {
+      width: 50%;
+      display: flex;
+      align-self: flex-start;
+      padding-top: 2rem; }
+      @media (min-width: 48em) {
+        .hero .content-wrapper .hero__slides {
+          margin-left: 5rem; } }
+      @media (max-width: 48em) {
+        .hero .content-wrapper .hero__slides {
+          display: flex;
+          flex-direction: row;
+          width: 100%; } }
+      .hero .content-wrapper .hero__slides .slider-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column; }
+        @media (min-width: 48em) {
+          .hero .content-wrapper .hero__slides .slider-wrapper {
+            margin-left: -70vw; } }
+        .hero .content-wrapper .hero__slides .slider-wrapper .content-title {
+          display: flex;
+          justify-content: center;
+          width: 100%; }
+          .hero .content-wrapper .hero__slides .slider-wrapper .content-title .slider-title {
+            font-family: "Helvetica-Bold";
+            font-size: 24px;
+            color: #fa6980; }
+          .hero .content-wrapper .hero__slides .slider-wrapper .content-title .slider {
+            max-width: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between; }
+            .hero .content-wrapper .hero__slides .slider-wrapper .content-title .slider .fa-chevron-left {
+              font-size: 10px;
+              color: #707070;
+              cursor: pointer; }
+            .hero .content-wrapper .hero__slides .slider-wrapper .content-title .slider .fa-chevron-right {
+              font-size: 10px;
+              color: #202124;
+              cursor: pointer; }
+      .hero .content-wrapper .hero__slides .news {
+        max-width: 380px;
+        width: 100%;
+        margin-top: 41px; }
+        .hero .content-wrapper .hero__slides .news .news__title {
+          font-family: "Helvetica";
+          font-weight: bold;
+          font-size: 16px;
+          color: #fa6980; }
+        .hero .content-wrapper .hero__slides .news .article {
+          font-family: "Helvetica";
+          font-weight: bold;
+          font-size: 16px;
+          color: #202124;
+          margin-top: 20px; }
+        .hero .content-wrapper .hero__slides .news .news-txt {
+          font-family: "AcuminPro-Regular";
+          font-size: 16px;
+          color: #a6adb4;
+          margin-top: 10px;
+          line-height: 20px; }
+        .hero .content-wrapper .hero__slides .news .news-icon {
+          font-family: "Helvetica-Oblique";
+          font-size: 13px;
+          color: #a6adb4;
+          margin-top: 12px; }
+          .hero .content-wrapper .hero__slides .news .news-icon .fa-clock {
+            font-size: 16px;
+            color: #cbd0d3;
+            margin-right: 10px; }
+
+@media (max-width: 48em) {
+  .title-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%; } }
